@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: rgb(12, 13, 26);
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .container {
+        width: 250px;
+        height: 250px;
+        box-shadow: border-box;
+        border: 2px solid white;
+        margin: auto;
+
+        display: flex;
+      }
+      .square {
+        position: relative;
+        width: 90px;
+        height: 50px;
+        align-self: center;
+        justify-content: center;
+        left: 52%;
+        top: 150px;
+        border: 3px solid rgb(112, 112, 228);
+        background-color: rgb(112, 112, 228);
+        border-radius: 6px;
+      }
+
+      .tri {
+        position: relative;
+        align-self: center;
+
+        left: 46%;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        box-shadow: border-box;
+        width: 0;
+        height: 0;
+        border-right: 125px solid rgb(112, 112, 228);
+        border-top: 125px solid transparent;
+        border-left: 125px solid transparent;
+        border-bottom: 125px solid transparent;
+      }
+      .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        top: -160px;
+        left: 1020px;
+        justify-content: center;
+        position: relative;
+        box-shadow: 0 0 0 10px rgb(112, 112, 228), 0 0 0 20px rgb(12, 13, 26),
+          0 0 0 30px rgb(112, 112, 228), 0 0 0 40px rgb(12, 13, 26),
+          0 0 0 50px rgb(112, 112, 228), 0 0 0 60px rgb(12, 13, 26),
+          0 0 0 70px rgb(112, 112, 228);
+        z-index: -2;
+      }
+      #this {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        z-index: -1;
+        left: 1000;
+
+        top: 50px;
+        left: 1010px;
+        background-color: rgb(12, 13, 26);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="tri"></div>
+    <div id="this"></div>
+    <div class="circle"></div>
+  </body>
+</html>
